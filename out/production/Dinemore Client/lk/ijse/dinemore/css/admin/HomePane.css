@@ -1,0 +1,10 @@
+
+#header-top{
+    -fx-background-color: #4b4b4b;
+    -fx-text-fill: white;
+}
+
+.title-main{
+    -fx-border-width: 0 0 2 2;!important; /*/left line*/
+    -fx-border-color: #eca624;!important;
+}

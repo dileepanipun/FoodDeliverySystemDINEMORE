@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="610.0" prefWidth="780.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dinemore.controller.admin.CustomerPaneController">
+   <children>
+      <Label id="header-top" layoutX="56.0" layoutY="16.0" prefHeight="35.0" stylesheets="@../../css/admin/CustomerPane.css" text="Customer Area" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assest/icons8_Add_User_Group_Man_Man_48px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <Label layoutX="15.0" layoutY="67.0" text="Customer ID : ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField layoutX="15.0" layoutY="90.0" prefHeight="25.0" prefWidth="119.0" />
+      <Label layoutX="149.0" layoutY="68.0" text="Customer Name :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField layoutX="149.0" layoutY="91.0" prefHeight="25.0" prefWidth="247.0" />
+      <Label layoutX="15.0" layoutY="123.0" text="Address : ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField layoutX="15.0" layoutY="146.0" prefHeight="25.0" prefWidth="383.0" />
+      <Label layoutX="15.0" layoutY="181.0" text="NIC : ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField layoutX="15.0" layoutY="204.0" prefHeight="25.0" prefWidth="175.0" />
+      <Label layoutX="203.0" layoutY="180.0" text="DOB : ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXDatePicker layoutX="203.0" layoutY="199.0" prefWidth="200.0" />
+      <JFXButton layoutX="34.0" layoutY="303.0" prefHeight="35.0" prefWidth="100.0" styleClass="button-save" stylesheets="@../../css/CommonStyle.css" text="Save" />
+      <JFXButton layoutX="139.0" layoutY="303.0" prefHeight="35.0" prefWidth="100.0" styleClass="button-update" stylesheets="@../../css/CommonStyle.css" text="Update" />
+      <JFXButton layoutX="249.0" layoutY="303.0" prefHeight="35.0" prefWidth="100.0" styleClass="button-remove" stylesheets="@../../css/CommonStyle.css" text="Remove" />
+      <TableView layoutX="24.0" layoutY="321.0" prefHeight="286.0" prefWidth="756.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="350.0">
+         <columns>
+            <TableColumn prefWidth="75.0" text="Customer ID" />
+            <TableColumn prefWidth="187.0" text="Customer Name" />
+            <TableColumn prefWidth="245.0" text="Address" />
+            <TableColumn prefWidth="163.0" text="NIC" />
+            <TableColumn prefWidth="99.0" text="DOB" />
+         </columns>
+      </TableView>
+      <JFXButton layoutX="607.0" layoutY="303.0" prefHeight="35.0" prefWidth="100.0" styleClass="button-search" stylesheets="@../../css/CommonStyle.css" text="Search" />
+      <TextField layoutX="359.0" layoutY="303.0" prefHeight="35.0" prefWidth="237.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>

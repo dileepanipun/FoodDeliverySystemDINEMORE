@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="610.0" prefWidth="780.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dinemore.controller.admin.HomePaneController">
+   <children>
+      <Label id="header-top" layoutX="31.0" layoutY="6.0" prefHeight="35.0" stylesheets="@../../css/admin/HomePane.css" text="Dashboard" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assest/icons8_Home_52px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </Label>
+      <TableView layoutX="14.0" layoutY="94.0" prefHeight="228.0" prefWidth="656.0" AnchorPane.leftAnchor="5.0">
+        <columns>
+          <TableColumn prefWidth="77.0" text="Order Id" />
+          <TableColumn prefWidth="102.0" text="Started Time" />
+            <TableColumn prefWidth="134.0" text="Order Current State" />
+            <TableColumn prefWidth="189.0" text="Order Item" />
+            <TableColumn prefWidth="153.0" text="Customer Contact" />
+        </columns>
+      </TableView>
+      <TableView layoutX="10.0" layoutY="369.0" prefHeight="214.0" prefWidth="656.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0">
+         <columns>
+            <TableColumn prefWidth="77.0" text="Order Id" />
+            <TableColumn prefWidth="88.0" text="Item Code" />
+            <TableColumn prefWidth="73.0" text="Chef Id" />
+            <TableColumn prefWidth="132.0" text="Order Current State" />
+            <TableColumn prefWidth="102.0" text="Started Time" />
+         </columns>
+      </TableView>
+      <Label layoutX="5.0" layoutY="349.0" prefHeight="35.0" prefWidth="656.0" style="-fx-border-width: 0 0 2 0; -fx-border-color: #eca624;" text="Pending Orders for deliver" textFill="#ffa000" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="119.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assest/icons8_McDonald%60s_French_Fries_96px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <padding>
+            <Insets left="5.0" />
+         </padding>
+      </Label>
+      <Label layoutX="5.0" layoutY="50.0" prefHeight="35.0" prefWidth="770.0" style="-fx-border-width: 0 0 2 0; -fx-border-color: #eca624;" text="Pendig orders for Item finish" textFill="#ffa000" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="119.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assest/icons8_McDonald%60s_French_Fries_96px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <padding>
+            <Insets left="5.0" />
+         </padding>
+      </Label>
+      <JFXButton layoutX="667.0" layoutY="147.0" prefHeight="35.0" prefWidth="105.0" styleClass="button-update" stylesheets="@../../css/CommonStyle.css" text="Infrom" />
+      <JFXButton layoutX="667.0" layoutY="191.0" prefHeight="35.0" prefWidth="105.0" styleClass="button-remove" stylesheets="@../../css/CommonStyle.css" text="Remove" />
+      <JFXButton layoutX="667.0" layoutY="235.0" prefHeight="35.0" prefWidth="105.0" styleClass="button-search" stylesheets="@../../css/CommonStyle.css" text="Refresh" />
+      <TextField layoutX="442.0" layoutY="50.0" prefHeight="30.0" prefWidth="174.0" promptText="By Order ID" />
+      <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="619.0" layoutY="48.0" prefHeight="32.0" prefWidth="42.0" style="-fx-background-color: #538eff;">
+         <font>
+            <Font size="11.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assest/icons8_Search_52px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton layoutX="667.0" layoutY="414.0" prefHeight="35.0" prefWidth="105.0" styleClass="button-update" stylesheets="@../../css/CommonStyle.css" text="Infrom" />
+      <JFXButton layoutX="667.0" layoutY="458.0" prefHeight="35.0" prefWidth="105.0" styleClass="button-remove" stylesheets="@../../css/CommonStyle.css" text="Remove" />
+      <JFXButton layoutX="667.0" layoutY="502.0" prefHeight="35.0" prefWidth="105.0" styleClass="button-search" stylesheets="@../../css/CommonStyle.css" text="Refresh" />
+      <TextField layoutX="442.0" layoutY="348.0" prefHeight="30.0" prefWidth="174.0" promptText="By Order ID" />
+      <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="620.0" layoutY="346.0" prefHeight="32.0" prefWidth="41.0" style="-fx-background-color: #538eff;">
+         <font>
+            <Font size="11.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assest/icons8_Search_52px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <Separator layoutX="5.0" layoutY="327.0" prefHeight="11.0" prefWidth="770.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" />
+   </children>
+</AnchorPane>

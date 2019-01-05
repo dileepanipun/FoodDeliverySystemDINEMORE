@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dinemore.controller.login.ReceptionLoginController">
+   <children>
+      <Label id="header-top" layoutX="20.0" layoutY="26.0" prefHeight="40.0" stylesheets="@../../css/login/AdminLogin.css" text="Dinemore User Login - Reception" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assest/icons8_Meal_48px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <JFXButton id="stage-close" fx:id="btnClose" contentDisplay="GRAPHIC_ONLY" layoutX="343.0" layoutY="25.0" onAction="#stageClose" prefHeight="35.0" prefWidth="35.0" stylesheets="@../../css/login/AdminLogin.css" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="3.0">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assest/icons8_Multiply_50px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton id="stage-minimize" fx:id="btnMinimize" contentDisplay="GRAPHIC_ONLY" layoutX="339.0" layoutY="20.0" onAction="#stageMinimize" prefHeight="35.0" prefWidth="35.0" stylesheets="@../../css/login/AdminLogin.css" AnchorPane.rightAnchor="42.0" AnchorPane.topAnchor="3.0">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+               <image>
+                  <Image url="@../../assest/icons8_Thick_Vertical_Line_50px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <TextField id="text-username" layoutX="30.0" layoutY="274.0" prefWidth="294.0" promptText="User Name" stylesheets="@../../css/login/AdminLogin.css" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <padding>
+            <Insets bottom="5.0" left="15.0" right="5.0" top="5.0" />
+         </padding>
+      </TextField>
+      <PasswordField id="text-password" layoutX="30.0" layoutY="332.0" promptText="Password" stylesheets="@../../css/login/AdminLogin.css" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <padding>
+            <Insets bottom="5.0" left="15.0" right="5.0" top="5.0" />
+         </padding>
+      </PasswordField>
+      <JFXButton id="login-button" fx:id="btnLogin" layoutX="200.0" layoutY="434.0" onAction="#loginOnaction" prefHeight="40.0" prefWidth="140.0" stylesheets="@../../css/login/AdminLogin.css" text="Login" textFill="WHITE" AnchorPane.rightAnchor="30.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton id="cancel-button" layoutX="31.0" layoutY="434.0" onAction="#cancelOnAction" prefHeight="40.0" prefWidth="140.0" stylesheets="@../../css/login/AdminLogin.css" text="Cancel" textFill="#616161" AnchorPane.leftAnchor="30.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+      <Label id="image-label" contentDisplay="GRAPHIC_ONLY" layoutX="95.0" layoutY="82.0" minHeight="150.0" prefWidth="150.0" stylesheets="@../../css/login/AdminLogin.css" text="Label" />
+      <ImageView fx:id="imageID" fitHeight="120.0" fitWidth="120.0" layoutX="110.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../assest/icons8_Breastfeeding_96px.png" />
+         </image>
+         <viewport>
+            <Rectangle2D />
+         </viewport>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="650.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dinemore.controller.reception.ReceptionMainPaneController">
+   <children>
+      <ImageView fitHeight="630.0" fitWidth="221.0" layoutX="220.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="20.0">
+         <image>
+            <Image url="@../../assest/DinemoreSideBG.png" />
+         </image>
+      </ImageView>
+      <VBox id="side-vbox" layoutX="10.0" layoutY="31.0" prefHeight="630.0" prefWidth="220.0" stylesheets="@../../css/reception/ReceptionMainPane.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="20.0">
+         <children>
+            <JFXButton id="side-menu-button" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="10.0" layoutY="155.0" onAction="#orderpane" prefHeight="45.0" prefWidth="220.0" stylesheets="@../../css/reception/ReceptionMainPane.css" text="Place Order" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold" size="12.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../assest/icons8_Shopping_Cart_64px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets right="20.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton id="side-menu-button" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="10.0" layoutY="60.0" onAction="#customerPane" prefHeight="45.0" prefWidth="220.0" stylesheets="@../../css/reception/ReceptionMainPane.css" text="Manage Customer" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold" size="12.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../assest/icons8_Add_User_Group_Man_Man_48px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets right="20.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton id="side-menu-button" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="10.0" layoutY="35.0" onAction="#manageOrder" prefHeight="45.0" prefWidth="220.0" stylesheets="@../../css/reception/ReceptionMainPane.css" text="Manage Order" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold" size="12.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../assest/icons8_Ringing_Phone_50px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets right="20.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton id="side-menu-button" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="10.0" layoutY="115.0" onAction="#settingsPane" prefHeight="45.0" prefWidth="220.0" stylesheets="@../../css/reception/ReceptionMainPane.css" text="Settings" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold" size="12.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../assest/icons8_Settings_48px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets right="20.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton id="side-menu-button" fx:id="btnLogout" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="10.0" layoutY="375.0" onAction="#logout" prefHeight="45.0" prefWidth="220.0" stylesheets="@../../css/reception/ReceptionMainPane.css" text="Logout" textFill="WHITE">
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Calibri Bold" size="12.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../assest/icons8_Shutdown_52px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets right="20.0" />
+               </padding>
+            </JFXButton>
+         </children>
+      </VBox>
+      <Label id="header-top" layoutY="14.0" prefHeight="40.0" stylesheets="@../../css/admin/MainPanel.css" text="Dinemore - Reception Panel" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assest/icons8_Meal_48px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <JFXButton id="stage-close" fx:id="btnClose" contentDisplay="GRAPHIC_ONLY" layoutX="867.0" layoutY="24.0" onAction="#stageClose" prefHeight="35.0" prefWidth="35.0" stylesheets="@../../css/admin/MainPanel.css" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="3.0">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assest/icons8_Multiply_50px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton id="stage-minimize" fx:id="btnMinimize" contentDisplay="GRAPHIC_ONLY" layoutX="812.0" layoutY="10.0" onAction="#stageMinimize" prefHeight="35.0" prefWidth="35.0" stylesheets="@../../css/admin/MainPanel.css" AnchorPane.rightAnchor="45.0" AnchorPane.topAnchor="3.0">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+               <image>
+                  <Image url="@../../assest/icons8_Thick_Vertical_Line_50px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <AnchorPane fx:id="panelLoader" layoutX="220.0" layoutY="39.0" prefHeight="610.0" prefWidth="780.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="220.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0" />
+   </children>
+</AnchorPane>

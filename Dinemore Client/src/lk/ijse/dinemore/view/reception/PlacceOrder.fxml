@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="610.0" prefWidth="780.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dinemore.controller.reception.PlaceOrderController">
+   <children>
+      <Label id="header-top" layoutX="76.0" layoutY="36.0" prefHeight="35.0" stylesheets="@../../css/admin/ChefPane.css" text="Place Order" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assest/icons8_Shopping_Cart_64px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <TextField fx:id="txtTelephoneNo" layoutX="14.0" layoutY="75.0" prefHeight="30.0" prefWidth="211.0" promptText="Telephone No">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtCustomerName" layoutX="14.0" layoutY="113.0" prefHeight="30.0" prefWidth="300.0" promptText="Customer Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtCustomerNIC" layoutX="13.0" layoutY="237.0" prefHeight="30.0" prefWidth="301.0" promptText="NIC Card No">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextArea fx:id="txtCustomerAddress" layoutX="14.0" layoutY="153.0" prefHeight="74.0" prefWidth="301.0" promptText="Address">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextArea>
+
+
+      <JFXButton layoutX="13.0" layoutY="277.0" onAction="#saveCustomerOnAction" prefHeight="30.0" prefWidth="95.0" styleClass="button-save" stylesheets="@../../css/CommonStyle.css" text="Save" />
+      <JFXButton layoutX="115.0" layoutY="277.0" onAction="#updateCustomerOnAction" prefHeight="30.0" prefWidth="95.0" styleClass="button-update" stylesheets="@../../css/CommonStyle.css" text="Update" />
+      <JFXButton layoutX="220.0" layoutY="277.0" onAction="#removeCustomerOnAction" prefHeight="30.0" prefWidth="95.0" styleClass="button-remove" stylesheets="@../../css/CommonStyle.css" text="Remove" />
+      <JFXButton layoutX="232.0" layoutY="75.0" onAction="#serachCustomerOnAction" prefHeight="30.0" prefWidth="80.0" styleClass="button-search" stylesheets="@../../css/CommonStyle.css" text="Seaech" />
+      <Label layoutX="14.0" layoutY="38.0" prefHeight="30.0" prefWidth="300.0" text="Customer Details" textFill="#ffa000">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assest/icons8_McDonald%60s_French_Fries_96px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <TextField fx:id="txtOrderId" layoutX="330.0" layoutY="75.0" prefHeight="30.0" prefWidth="349.0" promptText="Order ID">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtItemCode" layoutX="330.0" layoutY="196.0" prefHeight="30.0" prefWidth="124.0" promptText="Item Code">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <JFXButton layoutX="403.0" layoutY="573.0" onAction="#addOrderOnAction" prefHeight="30.0" prefWidth="262.0" styleClass="button-save" stylesheets="@../../css/CommonStyle.css" text="Add Order" />
+      <JFXButton layoutX="669.0" layoutY="573.0" onAction="#clearOnAction" prefHeight="30.0" prefWidth="105.0" styleClass="button-remove" stylesheets="@../../css/CommonStyle.css" text="Cancel" />
+      <JFXButton layoutX="685.0" layoutY="75.0" prefHeight="30.0" prefWidth="80.0" styleClass="button-search" stylesheets="@../../css/CommonStyle.css" text="Seaech" AnchorPane.rightAnchor="15.0" />
+      <Label layoutX="330.0" layoutY="38.0" prefHeight="30.0" prefWidth="438.0" text="Order Details" textFill="#ffa000">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assest/icons8_McDonald%60s_French_Fries_96px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <JFXDatePicker fx:id="dateOrderDate" defaultColor="#ffa100" layoutX="594.0" layoutY="114.0" AnchorPane.rightAnchor="15.0" />
+      <Label layoutX="327.0" layoutY="155.0" prefHeight="30.0" prefWidth="438.0" text="Item Details" textFill="#ffa000" AnchorPane.rightAnchor="15.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assest/icons8_McDonald%60s_French_Fries_96px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <TextField fx:id="txtOrderAddress" layoutX="330.0" layoutY="113.0" prefHeight="30.0" prefWidth="255.0" promptText="Order Address">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtQty" layoutX="330.0" layoutY="237.0" prefHeight="30.0" prefWidth="98.0" promptText="QTY">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtUnitPrice" layoutX="457.0" layoutY="237.0" prefHeight="30.0" prefWidth="131.0" promptText="Unit Price">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TableView layoutX="33.0" layoutY="340.0" prefHeight="250.0" prefWidth="770.0" AnchorPane.bottomAnchor="45.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0">
+        <columns>
+          <TableColumn prefWidth="88.0" text="Customer ID" />
+          <TableColumn prefWidth="142.0" text="Customer Name" />
+            <TableColumn prefWidth="205.0" text="Order Address" />
+            <TableColumn prefWidth="158.0" text="Item Descriptino" />
+            <TableColumn prefWidth="62.0" text="QTY" />
+            <TableColumn prefWidth="113.0" text="UnitPrice" />
+        </columns>
+      </TableView>
+      <JFXButton layoutX="330.0" layoutY="277.0" onAction="#addOrderOnAction" prefHeight="30.0" prefWidth="342.0" styleClass="button-save" stylesheets="@../../css/CommonStyle.css" text="Add to Cart" />
+      <JFXButton layoutX="677.0" layoutY="277.0" onAction="#clearOnAction" prefHeight="30.0" prefWidth="88.0" styleClass="button-search" stylesheets="@../../css/CommonStyle.css" text="Cancel" AnchorPane.rightAnchor="15.0" />
+      <ComboBox layoutX="458.0" layoutY="196.0" prefHeight="30.0" prefWidth="307.0" AnchorPane.rightAnchor="15.0" />
+      <Label layoutX="431.0" layoutY="237.0" prefHeight="30.0" prefWidth="26.0" text="RS :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtQty1" layoutX="199.0" layoutY="573.0" prefHeight="30.0" prefWidth="201.0" promptText="Total Price">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="115.0" layoutY="573.0" prefHeight="30.0" prefWidth="80.0" text="Total Price :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

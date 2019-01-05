@@ -1,0 +1,82 @@
+
+#header-top{
+    -fx-background-color: #ffa803;
+    -fx-background-radius: 0px 0px 15px 15px;
+}
+
+#stage-close{
+    -fx-background-color: transparent;
+    -fx-background-radius: 40px;
+}
+
+#stage-close:hover{
+    -fx-background-color: rgba(255, 31, 0, 0.46);
+    -fx-background-radius: 40px;
+}
+
+#stage-minimize{
+    -fx-background-color: transparent;
+    -fx-background-radius: 40px;
+}
+
+#stage-minimize:hover{
+    -fx-background-color: rgba(255, 255, 255, 0.46);
+    -fx-background-radius: 40px;
+}
+
+#background-pane{
+    -fx-background-color: #fffcf3;
+}
+
+#image-label{
+    -fx-background-color: #808381;
+    -fx-background-radius: 200px;
+}
+
+#login-button{
+    -fx-background-color: #fffcf3;
+    -fx-border-width: 1px;
+    -fx-border-color: #ffc40b;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-text-fill: #eca624;
+}
+
+#login-button:hover{
+    -fx-background-color: #ffb704;
+    -fx-border-width: 1px;
+    -fx-border-color: #ffc40b;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-text-fill: #fffcf3;
+}
+
+#cancel-button{
+    -fx-background-color: #ffffff;
+    -fx-border-width: 1px;
+    -fx-border-color: #a4a69f;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+#cancel-button:hover{
+    -fx-background-color: #e1e1e1;
+    -fx-border-width: 1px;
+    -fx-border-color: #a4a69f;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+#text-username{
+    -fx-background-color: transparent;
+    -fx-border-color: #a4a69f;
+    -fx-border-radius: 30px;
+    -fx-background-radius: 30px;
+}
+
+#text-password{
+    -fx-background-color: transparent;
+    -fx-border-color: #a4a69f;
+    -fx-border-radius: 30px;
+    -fx-background-radius: 30px;
+}

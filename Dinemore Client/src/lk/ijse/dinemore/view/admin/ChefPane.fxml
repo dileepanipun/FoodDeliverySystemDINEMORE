@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="610.0" prefWidth="780.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dinemore.controller.admin.ChefPaneController">
+   <children>
+      <Label id="header-top" layoutX="66.0" layoutY="26.0" prefHeight="35.0" stylesheets="@../../css/admin/ChefPane.css" text="Chef Area" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assest/icons8_Chef_Hat_48px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <JFXButton layoutX="10.0" layoutY="181.0" onAction="#btnChefSaveOnAction" prefHeight="35.0" prefWidth="120.0" styleClass="button-save" stylesheets="@../../css/CommonStyle.css" text="Save" />
+      <JFXButton layoutX="134.0" layoutY="181.0" onAction="#btnChefUpdateOnAction" prefHeight="35.0" prefWidth="120.0" styleClass="button-update" stylesheets="@../../css/CommonStyle.css" text="Update" />
+      <JFXButton layoutX="257.0" layoutY="181.0" onAction="#btnChefRemoveOnAction" prefHeight="35.0" prefWidth="120.0" styleClass="button-remove" stylesheets="@../../css/CommonStyle.css" text="Remove" />
+      <TableView layoutX="34.0" layoutY="228.0" prefHeight="377.0" prefWidth="770.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="228.0">
+         <columns>
+            <TableColumn prefWidth="120.0" text="Deliverer ID" />
+            <TableColumn prefWidth="120.0" text="Name " />
+            <TableColumn prefWidth="120.0" text="Address" />
+            <TableColumn prefWidth="120.0" text="NIC" />
+            <TableColumn prefWidth="120.0" text="Telephone" />
+            <TableColumn prefWidth="120.0" text="Age" />
+         </columns>
+      </TableView>
+      <JFXButton layoutX="642.0" layoutY="181.0" onAction="#bntSearchOnAction" prefHeight="35.0" prefWidth="100.0" styleClass="button-search" stylesheets="@../../css/CommonStyle.css" text="Search" />
+      <TextField layoutX="390.0" layoutY="181.0" onAction="#txtChefIDSearchArea" prefHeight="35.0" prefWidth="237.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtChefID" layoutX="20.0" layoutY="52.0" prefHeight="30.0" prefWidth="100.0" promptText="Chef ID" AnchorPane.leftAnchor="10.0" />
+      <TextField fx:id="txtChefName" layoutX="116.0" layoutY="52.0" prefHeight="30.0" prefWidth="260.0" promptText="Chef Name" />
+      <TextField fx:id="txtChefAddress" layoutX="20.0" layoutY="96.0" prefHeight="30.0" prefWidth="367.0" promptText="Address" AnchorPane.leftAnchor="10.0" />
+      <TextField fx:id="txtChefSalary" layoutX="20.0" layoutY="138.0" prefHeight="30.0" promptText="Salary" AnchorPane.leftAnchor="10.0" />
+      <TextField fx:id="txtChefTelephone" layoutX="166.0" layoutY="138.0" prefHeight="30.0" prefWidth="211.0" promptText="Telephone NO" />
+   </children>
+</AnchorPane>
